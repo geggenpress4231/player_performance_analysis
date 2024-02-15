@@ -36,20 +36,19 @@ This project requires R and the following R libraries:
 
 ## Data Preprocessing
 Mixed-Type Column Identification
-Overview: Identifying columns with mixed data types is crucial for data integrity. This step involves detecting columns that mix numeric and string values, which can lead to errors in subsequent analysis.
+Overview: Essential for data integrity, this process detects and flags columns mixing numeric and string values to prevent analysis errors.
 
-Code Insight: The approach uses sapply(data, is.character) to identify character columns, followed by attempting to convert these to numeric with as.numeric(). Columns causing NA values upon this conversion indicate mixed types and are flagged for further action.
+Code Insight: Uses sapply(data, is.character) and as.numeric() conversion, identifying columns that cause NA values, indicating mixed types.
 
 Missing Values Assessment
-Overview: Handling missing values is essential for accurate analysis. Missing data can distort analysis outcomes and lead to biased conclusions.
+Overview: Critical for ensuring analysis accuracy, missing values are identified to guide corrective actions like imputation or exclusion.
 
-Code Insight: The process iterates through each column with is.na(data[[column]]), summarizing missing values to understand data completeness. This insight guides strategies like imputation or exclusion of incomplete records.
+Code Insight: Iterates with is.na(data[[column]]), summarizing missing data to inform further handling strategies.
 
 Duplicate Entry Removal
-Overview: Eliminating duplicate entries ensures each player is uniquely represented, preventing skewed results and inaccuracies in the analysis.
+Overview: Vital for data accuracy, duplicates are removed to ensure unique representation of each player, avoiding skewed results.
 
-Code Insight: The dplyr package's distinct(short_name, .keep_all = TRUE) function is utilized to remove duplicates based on the short_name column, ensuring data cleanliness and integrity by retaining only the first occurrence of each player.
-
+Code Insight: Employs dplyr's distinct(short_name, .keep_all = TRUE), eliminating duplicates based on the short_name column.
 
 ## Analysis
 

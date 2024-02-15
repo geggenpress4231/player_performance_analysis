@@ -35,14 +35,21 @@ This project requires R and the following R libraries:
 
 
 ## Data Preprocessing
-Checking for Mixed-Type Columns
-The first step involves identifying columns that contain mixed data types, specifically columns that might have both numeric and string values. This is crucial because mixed-type columns can cause errors later in the analysis. The process starts by checking each column to see if it's of character type. For these character columns, an attempt is made to convert them to numeric. If the conversion results in NA for some entries but not others, it suggests that the column contains mixed types—numeric values that could be converted and non-numeric strings that couldn't. Identifying these columns allows you to decide how to handle them, whether by cleaning, splitting, or converting the data to a consistent format.
+Mixed-Type Column Identification
+Overview: Identifying columns with mixed data types is crucial for data integrity. This step involves detecting columns that mix numeric and string values, which can lead to errors in subsequent analysis.
 
-Checking for Missing Values-
-Next, you address the issue of missing values in the dataset. Missing values can lead to biased analyses and incorrect conclusions. The provided code iterates through each column, checking for NA values. By summarizing the missing values for each column, you gain insight into the completeness of your data. This step is critical for deciding on further actions, such as imputing missing values, removing rows or columns with too many missing values, or acknowledging these gaps in your analysis.
+Code Insight: The approach uses sapply(data, is.character) to identify character columns, followed by attempting to convert these to numeric with as.numeric(). Columns causing NA values upon this conversion indicate mixed types and are flagged for further action.
 
-Removing Duplicate Entries
-Duplicate entries in a dataset can skew results and give an inaccurate representation of the data. In your project, you focus on ensuring that each football player is represented only once. This is achieved by removing duplicate rows based on the short_name column, which presumably contains the players' names. Using the distinct function from the dplyr package, you keep the first occurrence of each player and remove subsequent duplicates, thus cleaning the data and preventing any biased analysis caused by redundancy.
+Missing Values Assessment
+Overview: Handling missing values is essential for accurate analysis. Missing data can distort analysis outcomes and lead to biased conclusions.
+
+Code Insight: The process iterates through each column with is.na(data[[column]]), summarizing missing values to understand data completeness. This insight guides strategies like imputation or exclusion of incomplete records.
+
+Duplicate Entry Removal
+Overview: Eliminating duplicate entries ensures each player is uniquely represented, preventing skewed results and inaccuracies in the analysis.
+
+Code Insight: The dplyr package's distinct(short_name, .keep_all = TRUE) function is utilized to remove duplicates based on the short_name column, ensuring data cleanliness and integrity by retaining only the first occurrence of each player.
+
 
 ## Analysis
 

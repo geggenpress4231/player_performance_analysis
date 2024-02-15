@@ -4,6 +4,8 @@
 
 This project aims to identify top association football player prospects for two key positions: strikers and fullbacks. Utilizing data from a comprehensive dataset of male players, we employ various data analysis techniques to process, analyze, and visualize player statistics. Our goal is to find players who match specific criteria, including pace, workrate, and market value for strikers, and defensive attributes for young fullbacks.
 
+Dataset Source: [FIFA Players Dataset on Kaggle](https://www.kaggle.com/datasets/joebeachcapital/fifa-players?select=male_players_23.csv)
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -32,4 +34,4 @@ This project requires R and the following R libraries:
 To replicate this analysis, clone this repository to your local machine:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/geggenpress4231/player_performance_analysis

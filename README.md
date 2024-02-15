@@ -13,8 +13,7 @@ This project aims to identify top association football player prospects for two 
   - [Fullback Selection](#fullback-selection)
 - [Results](#results)
 - [Visualization](#visualization)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Installation
 

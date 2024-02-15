@@ -67,3 +67,21 @@ Approach:
 Emphasis: More on defensive skills and growth potential compared to strikers.
 Criteria: Assess defensive ratings (tackling, interceptions, positioning), stamina (for both defensive and offensive contributions), and age (focus on younger players with development potential).
 Preprocessing and Analysis: Filter for fullbacks, apply criteria-specific filters, and use statistical tools to evaluate players, prioritizing those meeting or exceeding desired benchmarks.
+
+## Visualization
+
+### Combined Fullback Radar
+![Combined Fullback Radar](/path/to/combined_fullback_radar.png)
+
+### Combined Parallel Plot for Fullbacks
+![Combined Parallel Plot for Fullbacks](/path/to/combined_paralleplot_fullback.png)
+
+### Combined Striker Radar
+![Combined Striker Radar](/path/to/combined_striker_radar.png)
+
+### Individual Player Radar
+![Individual Player Radar](/path/to/individual_player_radar.png)
+
+### Top Striker Viewer
+![Top Striker Viewer](/path/to/top_one_striker_viewer.png)
+

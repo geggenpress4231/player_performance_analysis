@@ -31,10 +31,6 @@ This project requires R and the following R libraries:
 - `knitr`
 - `markdown`
 
-To replicate this analysis, clone this repository to your local machine:
-
-```bash
-git clone https://github.com/geggenpress4231/player_performance_analysis
 
 
 
@@ -48,4 +44,22 @@ Next, you address the issue of missing values in the dataset. Missing values can
 Removing Duplicate Entries
 Duplicate entries in a dataset can skew results and give an inaccurate representation of the data. In your project, you focus on ensuring that each football player is represented only once. This is achieved by removing duplicate rows based on the short_name column, which presumably contains the players' names. Using the distinct function from the dplyr package, you keep the first occurrence of each player and remove subsequent duplicates, thus cleaning the data and preventing any biased analysis caused by redundancy.
 
+Striker Selection
+Objective: The primary goal in striker selection was to identify prospects with high potential based on specific criteria such as pace, workrate, and market value. The focus was on finding players who could contribute significantly to the offensive play, showcasing speed, agility, and the ability to consistently perform at a high level.
 
+Approach: To tackle this objective, a multifaceted analysis was conducted. Initially, the dataset was filtered to isolate strikers, utilizing positions data. Following this, the focus shifted to evaluating each player based on the identified criteria:
+
+Pace: A key attribute for strikers, indicating the ability to outrun defenders. Players were ranked based on their pace attribute, prioritizing those with higher ratings.
+Workrate: This reflects a player's commitment and energy on the field, both in offensive and defensive actions. High workrate players were considered valuable for their ability to contribute across the field.
+Market Value: An indicator of a player's worth, which can reflect their skill level, potential, and demand in the football market. Players with high market values were considered for their proven or perceived abilities.
+Data analysis techniques, including statistical summaries and comparative analysis, were employed to sift through the dataset and identify players who excelled in these areas. The selection process involved both quantitative analysis of the attributes and qualitative considerations, such as potential for growth and consistency in performance.
+
+Fullback Selection
+Objective: The aim here was to pinpoint young, promising fullbacks with strong defensive attributes. The focus was on defensive capabilities, stamina, and the potential to develop into key players for a team's defensive lineup.
+
+Approach: The selection process for fullbacks differed slightly from that of strikers, with a stronger emphasis on defensive skills and potential for growth. The steps were as follows:
+
+Defensive Attributes: Players were assessed based on their defensive ratings, including tackling, interceptions, and defensive positioning. High ratings in these areas were crucial for selection.
+Stamina: Given the demanding nature of the fullback position, which requires players to contribute both defensively and offensively, stamina was a key attribute. Players with high stamina ratings were prioritized.
+Age: A focus on younger players was integral to this selection process, aiming to identify those with the potential for significant development and long-term contributions to their teams.
+Data preprocessing included filtering the dataset for fullbacks and then applying criteria-specific filters to identify suitable candidates. Statistical analysis tools were used to evaluate players, focusing on those who met or exceeded the benchmarks for the desired attributes.

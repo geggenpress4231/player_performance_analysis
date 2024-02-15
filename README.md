@@ -38,7 +38,7 @@ git clone https://github.com/geggenpress4231/player_performance_analysis
 
 
 
-##Data Preprocessing
+## Data Preprocessing
 Checking for Mixed-Type Columns
 The first step involves identifying columns that contain mixed data types, specifically columns that might have both numeric and string values. This is crucial because mixed-type columns can cause errors later in the analysis. The process starts by checking each column to see if it's of character type. For these character columns, an attempt is made to convert them to numeric. If the conversion results in NA for some entries but not others, it suggests that the column contains mixed types—numeric values that could be converted and non-numeric strings that couldn't. Identifying these columns allows you to decide how to handle them, whether by cleaning, splitting, or converting the data to a consistent format.
 

@@ -13,7 +13,6 @@ Dataset Source: [FIFA Players Dataset on Kaggle](https://www.kaggle.com/datasets
 - [Analysis](#analysis)
   - [Striker Selection](#striker-selection)
   - [Fullback Selection](#fullback-selection)
-- [Results](#results)
 - [Visualization](#visualization)
 
 

@@ -38,11 +38,13 @@ This project requires R and the following R libraries:
 Checking for Mixed-Type Columns
 The first step involves identifying columns that contain mixed data types, specifically columns that might have both numeric and string values. This is crucial because mixed-type columns can cause errors later in the analysis. The process starts by checking each column to see if it's of character type. For these character columns, an attempt is made to convert them to numeric. If the conversion results in NA for some entries but not others, it suggests that the column contains mixed types—numeric values that could be converted and non-numeric strings that couldn't. Identifying these columns allows you to decide how to handle them, whether by cleaning, splitting, or converting the data to a consistent format.
 
-Checking for Missing Values
+Checking for Missing Values-
 Next, you address the issue of missing values in the dataset. Missing values can lead to biased analyses and incorrect conclusions. The provided code iterates through each column, checking for NA values. By summarizing the missing values for each column, you gain insight into the completeness of your data. This step is critical for deciding on further actions, such as imputing missing values, removing rows or columns with too many missing values, or acknowledging these gaps in your analysis.
 
 Removing Duplicate Entries
 Duplicate entries in a dataset can skew results and give an inaccurate representation of the data. In your project, you focus on ensuring that each football player is represented only once. This is achieved by removing duplicate rows based on the short_name column, which presumably contains the players' names. Using the distinct function from the dplyr package, you keep the first occurrence of each player and remove subsequent duplicates, thus cleaning the data and preventing any biased analysis caused by redundancy.
+
+## Analysis
 
 Striker Selection
 Objective: The primary goal in striker selection was to identify prospects with high potential based on specific criteria such as pace, workrate, and market value. The focus was on finding players who could contribute significantly to the offensive play, showcasing speed, agility, and the ability to consistently perform at a high level.

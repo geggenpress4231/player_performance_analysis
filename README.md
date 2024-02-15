@@ -70,18 +70,17 @@ Preprocessing and Analysis: Filter for fullbacks, apply criteria-specific filter
 
 ## Visualization Results
 
-### Combined Fullback Radar
+### Combined Fullback Radar Chart
 ![Combined Fullback Radar](data_visualisation/combined_fullback_radar.png)
 
 ### Combined Parallel Plot for Fullbacks
 ![Combined Parallel Plot for Fullbacks](data_visualisation/combined_paralleplot_fullback.png)
 
-### Combined Striker Radar
+### Combined Striker Radar Chart
 ![Combined Striker Radar](data_visualisation/combined_striker_radar.png)
 
-### Individual Player Radar
+### Individual Player Radar Chart
 ![Individual Player Radar](data_visualisation/individual_player_radar.png)
 
-### Top Striker Viewer
-![Top Striker Viewer](data_visualisation/top_one_striker_viewer.png)
+
 
